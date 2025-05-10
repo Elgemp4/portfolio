@@ -3,7 +3,7 @@ import NavigationLink from "../components/NavigationLink";
 
 export default function BaseLayout() {
   return (
-    <div className="bg-background-900 text-text-50 font-mono p-4">
+    <div className="bg-background-900 text-text-50 font-mono p-4 min-h-screen grid grid-rows-[auto_1fr_auto]">
       <header className="flex items-center justify-between p-4 text-text-50 relative z-10">
         <h1 className="text-2xl font-bold">
           emilien<span className="text-accent-500">_</span>marquegnies
