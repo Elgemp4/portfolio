@@ -64,3 +64,21 @@
   --color-accent-900: #330c00;
   --color-accent-950: #1a0600;
 }
+
+.starry {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 80%,
+      var(--color-background-900)
+    ),
+    url("./assets/starry_sky.jpg");
+}
+
+@keyframes fly {
+  0% {
+    transform: translateY(35px) translateX(0px) rotate(110deg);
+  }
+  100% {
+    transform: translateY(400px) translateX(110vw) rotate(110deg);
+  }
+}
