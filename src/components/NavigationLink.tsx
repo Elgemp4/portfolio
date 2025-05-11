@@ -8,7 +8,7 @@ interface NavigationLinkProps {
 export default function NavigationLink({ to, text }: NavigationLinkProps) {
   return (
     <li className="group border-b-2 hover:border-accent-500 pb-1 border-transparent transition-all">
-      <Link to={to}>
+      <Link data-stick="true" to={to}>
         <span className="group-hover:text-accent-500 transition-colors">
           //
         </span>{" "}

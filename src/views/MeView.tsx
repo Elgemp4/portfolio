@@ -1,4 +1,5 @@
-// import rocket from "../assets/rocket.png";
+import rocket from "../assets/rocket.png";
+import NavigationLink from "../components/NavigationLink";
 
 export default function MeView() {
   return (
@@ -13,10 +14,37 @@ export default function MeView() {
         />
       </div> */}
 
-      <div className="flex flex-col items-center justify-center p-32">
-        <h2 className="text-6xl font-extrabold mb-8">Emilien Marquegnies</h2>
-        <p>Fullstack software developper & Worldskills competitor</p>
+      <div
+        className={`flex flex-col px-8 py-20 border-background-600 border-2 rounded-md bg-[url(/starry_sky.jpg)] bg-cover overflow-hidden`}
+      >
+        <img
+          src={rocket}
+          alt="Moon images"
+          className="w-2  animate-[fly_45s_linear_infinite] "
+        />
+        <div className="max-w-[50%] z-20">
+          <h2 className="text-3xl font-extrabold mb-8">
+            Hi I'm Emilien Marquegnies 👋
+          </h2>
+          <p>
+            I am a Fullstack software developper and competitor at Worldskills
+            Belgium
+          </p>
+        </div>
       </div>
+      <div>
+        <h2 className="text-3xl font-extrabold mb-8 mt-8 hover:underline">
+          <span className="text-accent-500">#</span> About me
+        </h2>
+        <p>
+          I am a passionate software developer with a strong interest in
+          technology and innovation. I enjoy working on challenging projects and
+          constantly learning new skills. My goal is to create impactful
+          solutions that make a difference in people's lives.
+        </p>
+      </div>
+      <NavigationLink text="Projects" to="/projects" />
+
       {/* <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-4xl font-bold">Me</h1>
         <p className="mt-4 text-lg">Welcome to my personal page!</p>

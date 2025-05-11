@@ -74,6 +74,11 @@
     url("./assets/starry_sky.jpg");
 }
 
+html,
+a {
+  /* cursor: none; */
+}
+
 @keyframes fly {
   0% {
     transform: translateY(35px) translateX(0px) rotate(110deg);
