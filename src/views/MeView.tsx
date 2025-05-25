@@ -1,19 +1,8 @@
 import rocket from "../assets/rocket.png";
-import NavigationLink from "../components/NavigationLink";
 
 export default function MeView() {
   return (
-    <>
-      {/* <div
-        className={`absolute top-0 left-0 right-0 starry bg-cover bg-center w-full h-[700px] overflow-hidden`}
-      >
-        <img
-          src={rocket}
-          alt="Moon images"
-          className="w-2  animate-[fly_45s_linear_infinite] "
-        />
-      </div> */}
-
+    <div className="p-8">
       <div
         className={`flex flex-col px-8 py-20 border-background-600 border-2 rounded-md bg-[url(/starry_sky.jpg)] bg-cover overflow-hidden`}
       >
@@ -43,7 +32,6 @@ export default function MeView() {
           solutions that make a difference in people's lives.
         </p>
       </div>
-      <NavigationLink text="Projects" to="/projects" />
 
       {/* <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-4xl font-bold">Me</h1>
@@ -52,6 +40,6 @@ export default function MeView() {
           Here you can find information about me and my projects.
         </p>
       </div> */}
-    </>
+    </div>
   );
 }
