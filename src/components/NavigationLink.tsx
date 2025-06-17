@@ -10,9 +10,12 @@ export default function NavigationLink({ to, text }: NavigationLinkProps) {
     <li className="group border-b-2 hover:border-accent-500 pb-1 border-transparent ">
       <Link data-interact="true" to={to}>
         <span className="group-hover:text-accent-500 transition-colors">
-          //
-        </span>{" "}
+          &lt;
+        </span>
         {text}
+        <span className="group-hover:text-accent-500 transition-colors">
+          &gt;
+        </span>
       </Link>
     </li>
   );

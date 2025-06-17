@@ -32,6 +32,17 @@ export default function MeView() {
           solutions that make a difference in people's lives.
         </p>
       </div>
+      <div>
+        <h2 className="text-3xl font-extrabold mb-8 mt-8 hover:underline">
+          <span className="text-accent-500">#</span> What is this website ?
+        </h2>
+        <p>
+          This website is dedicated to my projects and achievements. It serves
+          as a portfolio to showcase my work and share my experiences with the
+          world. Here, you can find information about my skills, projects, and
+          interests. I hope you find it informative and inspiring!
+        </p>
+      </div>
 
       {/* <div className="flex flex-col items-center justify-center h-screen">
         <h1 className="text-4xl font-bold">Me</h1>
